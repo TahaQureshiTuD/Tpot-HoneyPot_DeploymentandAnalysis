@@ -1,0 +1,21 @@
+﻿Data,Count
+"AUTH LOGIN",464
+"QUIT",462
+"EHLO User",461
+"",112
+"Accept-Encoding: gzip",106
+"Accept: */*",75
+"Host: 34.172.118.45:587",68
+"STARTTLS",52
+"GET / HTTP/1.1",50
+"EHLO masscan",42
+"EHLO scanworker-Linux",9
+"Host: 34.27.250.211:25",9
+"ehlo hello",9
+"help",9
+"Host: 34.27.250.211:587",8
+"AUTH NTLM TlRMTVNTUAABAAAAB4IIAAAAAAAAAAAAAAAAAAAAAAA=",7
+"Data",7
+"EHLO mail.example.com",7
+"Host: 35.193.151.190:25",7
+"Host: 35.193.151.190:587",7

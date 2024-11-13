@@ -1,0 +1,21 @@
+﻿Data,Count
+"STARTTLS",97
+"EHLO masscan",94
+"Data",27
+"Mail from:<spameri@tiscali.it>",27
+"Quit",27
+"RCPT to:<spameri@tiscali.it>",27
+"Rset",27
+"QUIT",15
+"",14
+"EHLO User",14
+"AUTH LOGIN",13
+"Accept-Encoding: gzip",13
+"GET / HTTP/1.1",13
+"ehlo WIN-4TTI4DH7SGH",13
+"Host: 161.35.171.162:25",8
+"Accept: */*",7
+"EHLO 161.35.171.162",7
+"AUTH NTLM",6
+"TlRMTVNTUAABAAAAB4IIoAAAAAAAAAAAAAAAAAAAAAA=",6
+"EHLO scanworker-Linux",5

@@ -1,0 +1,11 @@
+﻿"Command Line Input",Count
+"rm -rf /data/local/tmp/*",20
+"am start -n com.ufo.miner/com.example.test.MainActivity",14
+"pm path com.ufo.miner",14
+"ps | grep trinity",14
+"am start -n com.socks.agent/.MainActivity",13
+"pm install /data/local/tmp/ufo.apk",13
+"/data/local/tmp/nohup /data/local/tmp/trinity",12
+"/data/local/tmp/nohup su -c /data/local/tmp/trinity",12
+"chmod 0755 /data/local/tmp/nohup",12
+"chmod 0755 /data/local/tmp/trinity",12

@@ -1,0 +1,42 @@
+﻿ID,Description,Count of records,,,,
+2210051,SURICATA STREAM Packet with broken ack,"348,353",,,,
+2210048,SURICATA STREAM reassembly sequence GAP -- missing packet(s),"15,496",,,,
+2210037,SURICATA STREAM FIN recv but no session,"6,986",,,,
+2210061,SURICATA STREAM spurious retransmission,"1,948",,,,
+2210041,SURICATA STREAM RST recv but no session,"1,804",,,,
+2001978,ET INFO SSH session in progress on Expected Port,"1,111",,,,
+2260001,SURICATA Applayer Wrong direction first Data,592,,,,
+2260002,SURICATA Applayer Detect protocol only one direction,521,,,,
+2228000,SURICATA SSH invalid banner,498,,,,
+2001984,ET INFO SSH session in progress on Unusual Port,418,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,ID,Description,Count of Records,Explanation,Potential CVEs / Vulnerability Insights
+,,2210051,SURICATA STREAM Packet with broken ack,"348,353","Indicates acknowledgments that don't match expected sequences, possibly due to network issues or spoofed/malicious packets.","Not directly mapped to a CVE, but may indicate network-layer manipulation attempts (e.g., DoS) which CVEs like CVE-2020-15505 (TCP/IP stack vulnerabilities) relate to."
+,,2210048,SURICATA STREAM reassembly sequence GAP -- missing packet(s),"15,496","Shows gaps in packet sequences, often suggesting packet loss, fragmentation issues, or evasion techniques.","Could correlate to evasion techniques where attackers manipulate TCP streams, related to vulnerabilities like CVE-2004-0230 (TCP sequence prediction)."
+,,2210037,SURICATA STREAM FIN recv but no session,"6,986","A FIN (finish) flag received without an existing session, potentially indicating scanning or incomplete connections.","Often seen in TCP connection manipulation and reconnaissance, similar to techniques described in CVE-1999-0016 (FIN scan vulnerability)."
+,,2210061,SURICATA STREAM spurious retransmission,"1,948","Unnecessary retransmissions, possibly due to network issues or attempts to evade detection by sending duplicate packets.","Relevant to evasion tactics rather than a specific CVE, though general TCP/IP stack vulnerabilities (CVE-2020-16899) might be exploited in similar patterns."
+,,2210041,SURICATA STREAM RST recv but no session,"1,804","A reset (RST) flag received for a non-existing session, often seen in spoofing attacks or network mapping.",CVE-2004-0230 (TCP RST manipulation) can cause service disruptions and may apply here if used maliciously.
+,,2001978,ET INFO SSH session in progress on Expected Port,"1,111","Detects SSH traffic on standard SSH port (22), indicating an active session which could be legitimate or unauthorized.","Not directly mapped to a CVE, but brute-force attempts (CVE-2018-15473 in OpenSSH) are often associated with SSH connections."
+,,2260001,SURICATA Applayer Wrong direction first Data,592,"Data packet received in an unexpected direction, indicating potential misconfigurations or attacks.","Commonly seen in protocol misuse or misconfigurations, potentially linked to CVEs if exploited (e.g., CVE-2020-13933 for OpenSSL)."
+,,2260002,SURICATA Applayer Detect protocol only one direction,521,"Data flow detected in only one direction, indicating incomplete connections or scanning activities.","Potential reconnaissance or half-open scan techniques, such as those related to CVE-1999-0523 (TCP SYN flood)."
+,,2228000,SURICATA SSH invalid banner,498,"Detects an invalid SSH banner, possibly indicating a custom or malicious SSH client.","Might relate to SSH protocol vulnerabilities (e.g., CVE-2016-0777, an OpenSSH client vulnerability)."
+,,2001984,ET INFO SSH session in progress on Unusual Port,418,"SSH detected on a non-standard port, often used by attackers to evade detection or bypass firewalls.",This behavior often corresponds to lateral movement tactics but isn’t tied to a specific CVE; relates to general SSH misconfigurations.
+,,,,,,
+,,Summary,,,,
+,,,,,,
+,,These Suricata alerts suggest that your network is observing:,,,,
+,,,,,,
+,,"1. Protocol Evasion Attempts: Multiple alerts (e.g., retransmissions, sequence gaps) imply attackers may be attempting to evade detection by manipulating packet flows.",,,,
+,,"2. Reconnaissance and Scanning: Alerts such as missing sessions and RST/FIN without sessions are often associated with scanning activity, suggesting reconnaissance on your network.",,,,
+,,"3. SSH Anomalies: Several alerts on SSH (unexpected ports, invalid banners) indicate that attackers are likely probing SSH services, possibly for brute-force attacks or lateral movement.",,,,
+,,"4. Application Layer Misconfigurations: Alerts like ""Wrong direction first Data"" indicate potential misconfigurations or malformed traffic that could be exploited.",,,,
+,,,,,,
+,,Recommended Actions,,,,
+,,,,,,
+,,"Enable Strict Packet Reassembly: Mitigate evasion tactics by ensuring that packet reassembly is robust, reducing the likelihood of successful sequence manipulation.",,,,
+,,"Monitor SSH Activity Closely: Use rate limiting and strong authentication for SSH, especially for connections on non-standard ports.",,,,
+,,Enhance IDS/IPS Rules: Fine-tune Suricata or related IDS/IPS settings to detect and respond more effectively to malformed and unexpected traffic patterns.,,,,
+,,Review Network Configuration: Ensure network infrastructure and security policies are configured to limit exposure to reconnaissance techniques and misconfigurations.,,,,

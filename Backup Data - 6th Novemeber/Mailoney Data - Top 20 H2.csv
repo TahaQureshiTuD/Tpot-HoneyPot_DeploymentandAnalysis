@@ -1,0 +1,21 @@
+﻿Data,Count
+"QUIT",144
+"AUTH LOGIN",127
+"EHLO User",127
+"RSET",59
+"STARTTLS",49
+"EHLO masscan",43
+"",41
+"GET / HTTP/1.1",40
+"Accept-Encoding: gzip",35
+"Data",16
+"Mail from:<spameri@tiscali.it>",16
+"Quit",16
+"RCPT to:<spameri@tiscali.it>",16
+"Rset",16
+"Accept: */*",15
+"Host: 34.91.222.211:25",13
+"Host: 34.34.8.26:25",12
+"ehlo WIN-4TTI4DH7SGH",9
+"data",8
+,7

@@ -1,0 +1,11 @@
+﻿"Command Line Input",Count
+"cd ~; chattr -ia .ssh; lockr -ia .ssh",2397
+"lockr -ia .ssh",2397
+"uname -a",2170
+"uname -m",2101
+"cat /proc/cpuinfo | grep name | wc -l",2099
+"cat /proc/cpuinfo | grep model | grep name | wc -l",2096
+"crontab -l",2096
+"free -m | grep Mem | awk '{print $2 ,$3, $4, $5, $6, $7}'",2096
+"ls -lh $(which ls)",2096
+top,2096
