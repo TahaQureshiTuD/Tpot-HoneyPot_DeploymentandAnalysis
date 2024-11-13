@@ -1,0 +1,16 @@
+Honeypot/ Incident Type	MITRE ATT&CK	Detection 	Prevention 
+			
+Mailoney- Email Phishing	T1566	Use advanced SIEM for email analysis, integrating threat intelligence feeds from advisories.	-Blacklist suspicious IP addresses.
+			-Enable IP filtering and rate-limiting on SMTP services.
+			
+			
+Cowrie-Brute Force and Cryptojacking	T1110 and T1059	Alert on multiple failed login attempts.	-Change Vendor Defaults,
+			Blacklist common Passwords.
+			-Enable multi-factor authentication (MFA) where possible.
+			
+			
+ADB Honey- Malware Exploits	T1105	Monitor ADB connections for unusual or unauthorized activity	-Disable ADB over the network; restrict ADB usage to trusted IP ranges
+Ddospot – DDoS Attacks	T1498	Use traffic monitoring tools to detect abnormal spikes. Apply threshold-based alerts for packet rate increase.	- Use rate-limiting and geo-blocking or IP Blacklisting.
+			- Implement DDoS mitigation solutions such as Cloudflare or AWS Shield.
+Conpot – ICS/SCADA Attacks	T1046	Detect abnormal network traffic using IDS (e.g., Suricata) signatures	- Segment ICS/SCADA networks from corporate networks to limit exposure.
+			
