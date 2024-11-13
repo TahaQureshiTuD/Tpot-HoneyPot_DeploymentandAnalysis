@@ -1,0 +1,11 @@
+﻿ID,Description,"Count of records"
+2210051,"SURICATA STREAM Packet with broken ack",351567
+2210048,"SURICATA STREAM reassembly sequence GAP -- missing packet(s)",15747
+2210037,"SURICATA STREAM FIN recv but no session",6989
+2210061,"SURICATA STREAM spurious retransmission",2021
+2210041,"SURICATA STREAM RST recv but no session",1805
+2001978,"ET INFO SSH session in progress on Expected Port",1115
+2260001,"SURICATA Applayer Wrong direction first Data",814
+2260002,"SURICATA Applayer Detect protocol only one direction",525
+2228000,"SURICATA SSH invalid banner",498
+2001984,"ET INFO SSH session in progress on Unusual Port",418
