@@ -23,7 +23,7 @@
 
 ---
 
-## 🛠️ Tools and Websites Utilized
+## 🛠️ Tools / Websites/ Resources Utilized in the Analysis of Honeypot 
 
 In order to effectively analyze the data collected from our honeypots, we employed a variety of security tools and services:
 
@@ -32,20 +32,13 @@ In order to effectively analyze the data collected from our honeypots, we employ
 3. **Cuckoo Sandbox** 🖥️: Dynamic malware analysis environment.
 4. **Malware Bazaar** 💾: Repository of malicious software samples.
 5. **Weavers List** 📜: A community-sourced threat intelligence feed.
-
----
-
-## 📚 Major References
-
-Our research was informed by insights and data from recent industry reports:
-
-1. **CrowdStrike Report 2024** 📊
-2. **SANS Uncommon Passwords** 🔑
-3. **CISA and FBI Joint Advisory** 🛡️
-4. **MITRE ATT&CK Framework** 🗂️
-5. **PWC - Maltenes Landscape** 📈 - https://www.pwc.com/mt/en/publications/technology/tpot.html
-6. **JOE Sandbox Report** 🧪
-7. **UK Ban on IoT Default Passwords** 🚫
+6. **CrowdStrike Report 2024** 📊
+7. **SANS Uncommon Passwords** 🔑
+8. **CISA and FBI Joint Advisory** 🛡️
+9. **MITRE ATT&CK Framework** 🗂️
+10. **PWC - Maltenes Landscape** 📈 - https://www.pwc.com/mt/en/publications/technology/tpot.html
+11. **JOE Sandbox Report** 🧪
+12. **UK Ban on IoT Default Passwords** 🚫
 
 ---
 
