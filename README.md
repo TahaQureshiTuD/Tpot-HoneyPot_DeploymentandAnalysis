@@ -43,7 +43,7 @@ Our research was informed by insights and data from recent industry reports:
 2. **SANS Uncommon Passwords** 🔑
 3. **CISA and FBI Joint Advisory** 🛡️
 4. **MITRE ATT&CK Framework** 🗂️
-5. **PWC - Maltenes Landscape** 📈
+5. **PWC - Maltenes Landscape** 📈 - https://www.pwc.com/mt/en/publications/technology/tpot.html
 6. **JOE Sandbox Report** 🧪
 7. **UK Ban on IoT Default Passwords** 🚫
 
